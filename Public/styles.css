@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Rubik:wght@800&display=swap');
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: #59CE8F;
+}
+
+#seleccion-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.titulo{
+    color: #876445;
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Rubik', sans-serif;
+}
+    
+
+.subtitulo{
+    display: flex;
+    font-size: 28px;
+    color: #F5E8C7;
+
+}
+
+.tarjetas, .tarjetas-ataque{
+    display: flex;
+    gap: 5px;
+
+}
+
+.tarjeta-de-mokepon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 175px;
+    height: 100px;
+    color: #3C2C3E;
+    background-color: #ECCCB2;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 5px;
+    border: 1px solid orchid;
+    border-radius: 24px;
+}
+
+.tarjeta-de-mokepon img{
+    width: 75px;
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    width: 175px;
+    background-color: #898AA6;
+}
+
+#boton-mascota{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 35px;
+    background-color: lightsteelblue;
+    color:  #3C2C3E;
+    font-size: 16px;
+    padding: 10px;
+    box-sizing: content-box;
+    margin-top: 30px;
+    border: 3px solid darksalmon;
+    border-radius: 36px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#seleccion-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+
+.ataques{
+    background-color: #FCE2DB;
+    border-radius: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-color: transparent;
+    width: 100px;
+    color:#3C2C3E;
+}
+
+#mensajes{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    background: #CEE5D0;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 20px
+    
+}
+
+#reinicio{
+    border: none;
+    color:#3C2C3E;
+    background-color: #ECCCB2;
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.combates{
+    display:grid;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+}
+
+.ataque-jugador, .ataque-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mapa-mokepon{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mapa-mokepon button{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 35px;
+    background-color: lightsteelblue;
+    color:  #3C2C3E;
+    font-size: 12px;
+    padding: 10px;
+    box-sizing: content-box;
+    margin: 5px, 0px;
+    border: 2px solid darksalmon;
+    border-radius: 36px;
+    font-family: 'Nunito', sans-serif;
+}
+
+@media (max-width: 500px){
+    .tarjetas, .tarjetas-ataque{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 360px){
+    #mapa-mokepon div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mokepon</title>
+    <link rel="stylesheet" href="./styles.css">
+    
+</head>
+<body>
+    <section id="seleccion-mascota">
+        <h1 class ="titulo"> <strong>Mokepon</strong> 🔥💧🌱 </h1>
+        <h2 class="subtitulo">Elige a tu mascota</h2>
+        <div id="contenedor-tarjetas" class="tarjetas"> 
+            
+        </div>        
+        <button id="boton-mascota">Seleccionar</button>
+    </section>
+    <section id = "mapa-mokepon">
+        <h2 class = "subtitulo"> Recorre el Mapa con tu Mokepon</h2>
+        <canvas id = "mapita"></canvas>
+        <button onmouseup="detenerMovimiento()" 
+                ontouchend="detenerMovimiento()" 
+                ontouchstart="moverArriba()" 
+                onmousedown="moverArriba()">Arriba</button>
+        <div>
+            <button onmouseup="detenerMovimiento()" 
+                    ontouchend="detenerMovimiento()"
+                    ontouchstart="moverIzquierda()"   
+                    onmousedown="moverIzquierda()">Izquierda</button>
+            <button onmouseup="detenerMovimiento()" 
+                    ontouchend="detenerMovimiento()"
+                    ontouchstart="moverAbajo()" 
+                    onmousedown="moverAbajo()">Abajo</button>
+            <button onmouseup="detenerMovimiento()" 
+                    ontouchend="detenerMovimiento()"
+                    ontouchstart="moverDerecha()" 
+                    onmousedown="moverDerecha()">Derecha</button>       
+        </div>
+    </section>
+        <section id="seleccion-ataque">
+        <h1 class ="titulo"> <strong>Mokepon</strong> 🔥💧🌱 </h1>
+        <h2 class="subtitulo">Elige tu ataque Mokepon</h2>
+        <div id="contenedor-ataques" class="tarjetas-ataque">
+            
+        </div>
+            <div id="mensajes">
+                <p id ="resultado">Muchos éxitos en tu combate 😊</p> 
+                <section id="reiniciar">
+                    <button id="reinicio">Reiniciar</button>
+                </section>  
+            </div>
+            
+        <div class="combates">
+            <div class="ataque-jugador">
+                <p id="vidas-jugador">0</p> 
+                <p id ="mascota-jugador"></p>
+                <div id ="ataques-jugador"></div>
+                
+            </div>
+            <div class="ataque-enemigo">
+                <p id="vidas-enemigo">0</p>
+                <p id="mascota-enemigo"></p>
+                <div id="ataques-enemigo"></div>
+            </div>
+        </div>
+        </section>
+        <script src="./makiman.js"></script>
+    </body>
+</html>
